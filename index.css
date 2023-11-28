@@ -1,0 +1,38 @@
+.animated-text {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    font-size: 80px;
+    color: red;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animated-text.visible {
+    opacity: 1;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* This creates a gradient background */
+}
+
+#myButton {
+    padding: 15px 30px; /* Makes the button bigger */
+    font-size: 20px; /* Increases the font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#myButton:hover {
+    background-color: #feb47b; /* Change color on hover */
+}
